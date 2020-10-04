@@ -1,0 +1,321 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:700,300,600,800,400&subset=cyrillic,cyrillic-ext,latin);
+
+html,
+body {
+	font-family: "Roboto";
+	height: 100%;
+	margin: 0px;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+main{
+	height: 100%;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+ul{
+	margin: 0;
+}
+
+.page-profile,
+.page-error, 
+.page-auth{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+
+.page-error__container{
+	text-align: center;
+}
+
+.page-error__title{
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+.page-error__text{
+	font-size: 20px;
+	margin-bottom: 25px;
+}
+
+.page-error__go-back a{
+	font-size: 11px;
+	color: #2839CD;
+	text-decoration: none;
+}
+
+
+.common__form{
+	padding: 30px;
+}
+
+.auth__form{
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
+	border-radius: 12px;
+}
+
+
+.common__form-title{
+	text-align: center;
+	font-weight: 600;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.common__label{
+	color: #999999;
+	display: block;
+}
+.common__input{
+    width: 100%;
+    box-sizing:border-box;
+	padding: 10px;
+	border: 2px solid #EBEDEF;
+}
+.common__row{
+	margin-bottom: 20px;
+	justify-content: space-between;
+}
+
+.common__error-text{
+	font-size: 12px;
+	color: #FF2F2F;
+}
+
+input.error{
+	border-color: #FF2F2F;
+}
+
+.register-block{
+	width: 500px;
+}
+
+.common__row_sbm{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.btn{
+	cursor: pointer;
+	border-radius: 8px;
+	border: 0;
+	outline: none;
+}
+
+.common__btn-blue{
+	color: #fff;
+	background: #3369F3;
+	padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100%;
+}
+
+.common__btn-link{
+	color: blue;
+	background: none;
+	padding: 10px;
+}
+
+.common__btn-link-red{
+	color: red;
+}
+
+.profile__img-wrapper{
+	text-align: center;
+}
+.profile__img{
+	width:130px;
+	height: 130px;
+	border-radius: 50%;
+}
+
+
+
+.chats__page{
+	display: flex;
+	height: 100%;
+}
+
+
+.chats__sidebar{
+	max-width: 290px;
+	background: #EBEDEF;
+	height: 100%;
+	padding: 10px;
+}
+
+.chats__sidebar-left{
+	width: 50px;
+}
+.chats__sidebar-right {
+	position: relative;
+    width: calc(100% - 50px);
+}
+
+
+.chats__sidebar-search{
+	width: 240px;
+	margin-left: 30px;
+	margin-bottom: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+}
+
+.chats__sidebar-time{
+	position: absolute;
+	right: 5px;
+	top: 0px;
+	color: #999999;
+	font-size: 13px;
+}
+
+.chats__sidebar-title{
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.chats__sidebar-message{
+	font-size: 12px;
+	color: #999999;
+}
+
+.chats__sidebar-you{
+	font-weight: 600;
+	color: #1E1E1E;
+}
+
+.chats__sidebar-img{
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+}
+
+.chats__sidebar-list{
+	padding: 0px;
+	
+}
+.chats__sidebar-item{
+	display: flex;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	padding-bottom: 20px;
+}
+
+.chats__sidebar-list--item-count{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	color: #fff;
+	text-align: center;
+	font-size: 11px;
+	line-height: 20px;
+	background: #3369F3;
+}
+
+.chats__messages{
+	position: relative;
+	display: flex;
+	width: calc(100% - 360px);
+	justify-content: center;
+    align-items: center;
+}
+
+.chats__messages.noempty{
+	display: block;
+}
+
+.chats__messages-list{
+	width: 100%;
+}
+
+.chats__messages-item{
+	position: relative;
+	background: #F8F8F8;
+	max-width: 400px;
+	border-radius: 5px;
+	margin: 10px 0;
+	padding: 10px;
+}
+.chats__messages-item-you{
+	position: relative;
+	max-width: 400px;
+	background: #E4EDFD;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.chats__messages-item img{
+	max-width: 300px;
+}
+
+.chats__messages-info{
+	padding-left: 40px;
+}
+.chats__messages-user-avatar{
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+}
+.chats__messages-info{
+	padding:10px 20px;
+}
+.chats__messages-left{
+	display: inline-block;
+}
+.chats__messages-right{
+	display: inline-block;
+}
+
+.chats__messages-user{
+	font-weight: 600;
+	font-size: 13px;
+}
+
+.chats__messages-date-active{
+	font-size: 12px;
+	color: #999999;
+}
+
+.chats__messages-time{
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	font-size: 9px;
+	color: #999999;
+}
+
+
+.chats__messages-form{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	border-top: 1px solid #EAEAEA;
+	padding: 10px;
+}
+
+.chats__messages-input{
+	padding: 10px;
+	border: 0;
+	width: calc(100% - 350px);
+}
+
+.chats__messages-bs{
+	width: 28px;
+	height: 28px;
+	background: #3369F3;
+	border-radius: 50%;
+	border: 0;
+	color: white;
+}
